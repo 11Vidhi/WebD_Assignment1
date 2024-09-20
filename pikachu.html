@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pikachu</title>
+</head>
+<body>
+    <div style="display: flex;">
+    <img src="pikachu.webp" alt="pikachu" id="myImage">
+    <div>
+    <p style="scroll-margin-left: 200px;">Pikachu is an Electric-type Pokémon introduced in Generation I. It evolves from Pichu when leveled up with high friendship and evolves into Raichu when exposed to a Thunder Stone. However, the starter Pikachu in Pokémon Yellow will refuse to evolve into Raichu unless it is traded and evolved on another save file.</p>
+    <img src="pichu__pikachu__raichu.jpg" alt="pikachu" width="500" height="500">
+    <p style="scroll-margin-left: 200px;">Pichu-->Pikachu-->Raichu</p>
+    <p style="scroll-margin-left: 200px;">Pikachu is popularly known as the mascot of the Pokémon franchise and a major representative of Nintendo's collective mascots. It is also the game mascot and starter Pokémon of Pokémon Yellow and Pokémon: Let's Go, Pikachu!. It has made numerous appearances on the boxes of spin-off titles.</p>
+</div>
+</div>
+    <audio id="myAudio">
+        <source src="pikachu.mp3" type="audio/mpeg">
+        your browser does not support the audio element.
+    </audio>
+    <script>
+        document.getElementById("myImage").addEventListener("click", function(){
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        });
+        </script>
+
+</body>
+</html>

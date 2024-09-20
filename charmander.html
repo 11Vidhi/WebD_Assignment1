@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmander</title>
+</head>
+<body>
+    <div style="display: flex;">
+    <img src="charmander.png" alt="charmander" id="myImage">
+    <div>
+        <p style="scroll-margin-left: 200px;">Charmander is a bipedal, reptilian Pokémon with a primarily orange body. Its underside from the chest down and soles are cream-colored. It has two small fangs visible in its upper jaw and two smaller fangs in its lower jaw. Charmander has blue eyes. Its arms and legs are short with four fingers and three clawed toes. A fire burns at the tip of this Pokémon's slender tail, and has blazed there since Charmander's birth. The flame can be used as an indication of Charmander's health and mood, burning brightly when the Pokémon is strong, weakly when it is exhausted, wavering when it is happy, and blazing when it is enraged. It is said that Charmander dies if its flame goes out. However, if the Pokémon is healthy, the flame will continue to burn even if it gets a bit wet and is said to steam in the rain.</p>
+        <img src="charmander_evolution.jpg" alt="charmander" width="500" height="500">
+        <p style="scroll-margin-left: 200px;">Charmander-->Charmeleon-->Charizard</p>
+        <p style="scroll-margin-left: 200px;">Charmander evolutionary line is the only starter Pokémon evolutionary line that retains its primary type through all three stages of evolution.</p>
+    </div>
+    </div>
+        <audio id="myAudio">
+            <source src="charmander-audio.mp3" type="audio/mpeg">
+            your browser does not support the audio element.
+        </audio>
+        <script>
+            document.getElementById("myImage").addEventListener("click", function(){
+                var audio = document.getElementById("myAudio");
+                audio.play();
+            });
+            </script>
+    
+</body>
+</html>

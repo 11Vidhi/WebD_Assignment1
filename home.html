@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Pokemon</title>
+    <link rel="icon" href="pokeball.png">
+    
+
+    <style>
+        header{
+            text-align: center;
+        }
+
+        body{
+            font-family: "Georgia", Times, serif;
+            background-image: url(pokemon.jpg);
+            font-size: large;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+            padding: 5%;
+        }
+        .menu-item{
+            display: inline-block;
+            margin: 10px;
+        }
+
+        footer{
+            background-color: rgb(178, 178, 244);
+            color: black;
+            text-align: center;
+            font-size: smaller;
+            padding: 1%;
+            bottom: 0;
+            width: 100%;
+        }
+
+        td {
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+            text-align: center;
+        
+        }
+
+        table{
+            border: 1px solid white;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+    
+
+       
+       
+
+        h2{
+            font-size: larger;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <a href="home.html">
+        <img src="Premier_Ball.webp" alt="Pokemon Logo" style="float: left; " height="100" width="100">
+        </a>
+        <img src="3.png" alt="Pokemon Logo" height="250" width="600">
+        <div class="menu">
+        <a href="about.html">
+           <p class="menu-item" >About</p> 
+        </a>
+           <p class="menu-item"><a href="mailto:patel.vidhis@northeastern.edu.com">Contact Us</a></p>
+        <p class="menu-item"><a href="https://www.pokemon.com/us/">Pokemon Official Website</a></p>
+        <a href="login.html">
+            <p class="menu-item">Login</p>
+        </a>
+        <p>
+           
+        </p>
+    </div>
+    </header>
+    </div style="display: flex; justify-content: space-around;">
+        <div>
+           
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="0.jpg" style="width:60%; height: 20%;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="1.avif" style="width:60%; height: 5%;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="2.jpg" style="width:60%; height: 10% ;">
+                </div>
+
+
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+
+            <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+            </script>
+            <p>Welcome to the Pokemon World. Here you can find all the information about the pokemon. You can also find the pokemon that you want to choose and start your journey to the pokemon world.</p>
+            <p>Choose your pokemon and start your journey to the pokemon world. Click on the pokemon to find more information about the pokemon. Click on the video to watch the pokemon video.</p>
+            
+            <strong>Choose Your Pokemon</strong>
+            <p>
+
+            </p>
+        <form id="searchForm">
+            <input id="searchInput" type="text" placeholder="Search...">
+            <input type="submit" value="Search">
+
+   
+
+    <script>
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+        var searchValue = document.getElementById('searchInput').value.toLowerCase(); // Get the search input
+
+        if (searchValue === 'pikachu') {
+            window.location.href = 'pikachu.html'; // Redirect to pikachu.html if the search input is "Pikachu"
+        } else if (searchValue === 'squirtle') {
+            window.location.href = 'squirtle.html'; // Redirect to squirtle.html if the search input is "Squirtle"
+        } else if (searchValue === 'charmander') {
+            window.location.href = 'charmander.html'; // Redirect to charmander.html if the search input is "Charmander"
+        } else if (searchValue === 'bulbasaur') {
+            window.location.href = 'bulbasaur.html'; // Redirect to bulbasaur.html if the search input is "Bulbasaur"
+        } else if (searchValue === 'chikorita') {
+            window.location.href = 'chikorita.html'; // Redirect to chikorita.html if the search input is "Chikorita"
+        } else if (searchValue === 'cyndaquil') {
+            window.location.href = 'cyndaquil.html'; // Redirect to cyndaquil.html if the search input is "Cyndaquil"
+        } else if (searchValue === 'totodile') {
+            window.location.href = 'totodile.html'; // Redirect to totodile.html if the search input is "Totodile"
+        } else if (searchValue === 'torchic') {
+            window.location.href = 'torchic.html'; // Redirect to torchic.html if the search input is "Torchic"
+        } else if (searchValue === 'mudkip') {
+            window.location.href = 'mudkip.html'; // Redirect to mudkip.html if the search input is "Mudkip"
+        } else if (searchValue === 'treecko') {
+            window.location.href = 'treecko.html'; // Redirect to treecko.html if the search input is "Treecko"
+        } else if (searchValue === 'turtwig') {
+            window.location.href = 'turtwig.html'; // Redirect to turtwig.html if the search input is "Turtwig"
+        } else if (searchValue === 'chimchar') {
+            window.location.href = 'chimchar.html'; // Redirect to chimchar.html if the search input is "Chimchar"
+        } else if (searchValue === 'piplup') {
+            window.location.href = 'piplup.html'; // Redirect to piplup.html if the search input is "Piplup"
+        } else if (searchValue === 'snivy') {
+            window.location.href = 'snivy.html'; // Redirect to snivy.html if the search input is "Snivy"
+        } else if (searchValue === 'tepig') {
+            window.location.href = 'tepig.html'; // Redirect to tepig.html if the search input is "Tepig"
+        } else if (searchValue === 'oshawott') {
+            window.location.href = 'oshawott.html'; // Redirect to oshawott.html if the search input is "Oshawott"
+        } else if (searchValue === 'chespin') {
+            window.location.href = 'chespin.html'; // Redirect to chespin.html if the search input is "Chespin"
+        } else if (searchValue === 'fennekin') {
+            window.location.href = 'fennekin.html'; // Redirect to fennekin.html if the search input is "Fennekin"
+        } else if (searchValue === 'froakie') {
+            window.location.href = 'froakie.html'; // Redirect to froakie.html if the search input is "Froakie"
+        }
+     });
+     </script>
+
+     <p>
+
+     </p>
+
+
+            <table style="border: 1px solid white;">
+            <tr>
+                <td>Pokemon</td>
+                <td>Type</td>
+                <td>Element</td>
+                <td>Weakness</td>
+                <td>Region</td>
+            </tr>
+            <tr>
+                <td><a href="pikachu.html">Pikachu</a></td>
+                <td>Electric</td>
+                <td>Electric</td>
+                <td>Ground</td>
+                <td>Kanto</td>
+            </tr>
+            <tr>
+                <td><a href="charmander.html">Charmander</a></td>
+                <td>Fire</td>
+                <td>Fire</td>
+                <td>Water</td>
+                <td>Kanto</td>
+            </tr>
+            <tr>
+                <td><a href="squirtle.html">Squirtle</a></td>
+                <td>Water</td>
+                <td>Water</td>
+                <td>Electric</td>
+                <td>Kanto</td>
+            </tr>
+            <tr>
+                <td><a href="bulbasaur.html">Bulbasaur</a></td>
+                <td>Grass</td>
+                <td>Grass</td>
+                <td>Fire</td>
+                <td>Kanto</td>
+            </tr>
+            <tr>
+                <td><a href="chikorita.html">Chikorita</a></td>
+                <td>Grass</td>
+                <td>Grass</td>
+                <td>Fire</td>
+                <td>Johto</td>
+            </tr>
+            <tr>
+                <td><a href="cyndaquil.html">Cyndaquil</a></td>
+                <td>Fire</td>
+                <td>Fire</td>
+                <td>Water</td>
+                <td>Johto</td>
+            </tr>
+            <tr>
+                <td><a href="totodile.html">Totodile</a></td>
+                <td>Water</td>
+                <td>Water</td>
+                <td>Electric</td>
+                <td>Johto</td>
+            </tr>
+            <tr>
+                <td><a href="torchic.html">Torchic</a></td>
+                <td>Fire</td>
+                <td>Fire</td>
+                <td>Water</td>
+                <td>Hoenn</td>
+            </tr>
+            <tr>
+                <td><a href="mudkip.html">Mudkip</a></td>
+                <td>Water</td>
+                <td>Water</td>
+                <td>Electric</td>
+                <td>Hoenn</td>
+            </tr>
+            <tr>
+                <td><a href="treecko.html">Treecko</a></td>
+                <td>Grass</td>
+                <td>Grass</td>
+                <td>Fire</td>
+                <td>Hoenn</td>
+            </tr>
+            <tr>
+                <td><a href="turtwig.html">Turtwig</a></td>
+                <td>Grass</td>
+                <td>Grass</td>
+                <td>Fire</td>
+                <td>Sinnoh</td>
+            </tr>
+            <tr>
+                <td><a href="chimchar.html">Chimchar</a></td>
+                <td>Fire</td>
+                <td>Fire</td>
+                <td>Water</td>
+                <td>Sinnoh</td>
+            </tr>
+            <tr>
+                <td><a href="piplup.html">Piplup</a></td>
+                <td>Water</td>
+                <td>Water</td>
+                <td>Electric</td>
+                <td>Sinnoh</td>
+            </tr>
+            <tr>
+                <td><a href="snivy.html">Snivy</a></td>
+                <td>Grass</td>
+                <td>Grass</td>
+                <td>Fire</td>
+                <td>Unova</td>
+            </tr>
+            <tr>
+                <td><a href="tepig.html">Tepig</a></td>
+                <td>Fire</td>
+                <td>Fire</td>
+                <td>Water</td>
+                <td>Unova</td>
+            </tr>
+            <tr>
+                <td><a href="oshawott.html">Oshawott</a></td>
+                <td>Water</td>
+                <td>Water</td>
+                <td>Electric</td>
+                <td>Unova</td>
+            </tr>
+            <tr>
+                <td><a href="chespin.html">Chespin</a></td>
+                <td>Grass</td>
+                <td>Grass</td>
+                <td>Fire</td>
+                <td>Kalos</td>
+            </tr>
+            <tr>
+                <td><a href="fennekin.html">Fennekin</a></td>
+                <td>Fire</td>
+                <td>Fire</td>
+                <td>Water</td>
+                <td>Kalos</td>
+            </tr>
+            <tr>
+                <td><a href="froakie.html">Froakie</a></td>
+                <td>Water</td>
+                <td>Water</td>
+                <td>Electric</td>
+                <td>Kalos</td>
+            </tr>
+            <tr>
+                <td><a href="rowlet.html">Rowlet</a></td>
+                <td>Grass</td>
+                <td>Grass</td>
+                <td>Fire</td>
+                <td>Alola</td>
+            </tr>
+            <tr>
+                <td><a href="litten.html">Litten</a></td>
+                <td>Fire</td>
+                <td>Fire</td>
+                <td>Water</td>
+                <td>Alola</td>
+            </tr>
+            <tr>
+                <td><a href="popplio.html">Popplio</a></td>
+                <td>Water</td>
+                <td>Water</td>
+                <td>Electric</td>
+                <td>Alola</td>
+            </tr>
+            <tr>
+                <td><a href="grookey.html">Grookey</a></td>
+                <td>Grass</td>
+                <td>Grass</td>
+                <td>Fire</td>
+                <td>Galar</td>
+            </tr>
+
+        </table>
+        <p>
+
+        </p>
+            <video width="500" height="350" controls autoplay muted>
+                <source src="movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        
+        
+        <div style="clear: both;"></div>
+            <h2>About</h2>
+            <p>Pokemon is a media franchise created by video game designer Satoshi Tajiri that centers on fictional creatures called Pokemon. As of 2020, there have been 23 animated films and one live action film. The first nineteen animated films are based on the anime television series of the same name, with the original film being remade into the 22nd. The 20th, 21st and 23rd animated films are set in an alternate continuity to the series.</p>
+            <p>The films are produced by the animation studios OLM and Wit Studio and are distributed in Japan by Toho (with the exception of Pokémon the Movie: Hoopa and the Clash of Ages, which was distributed by Shochiku). Pikachu the Movie Box Office Rankings</p>
+            <p>As of 2020, the Pokémon franchise has grossed revenues of ¥6 trillion worldwide, making it the highest-grossing media franchise of all time. The Pokémon franchise includes 890 revealed species of the titular characters. Pokémon are listed in the Pokédex in the order of their National Pokédex number. The only exception to this rule is Pikachu, who was made to be the first Pokémon in the Pokédex.</p>
+            <footer>
+                <p>© 2024 Pokemon World. All rights reserved.</p>
+                <p>Contact: <information:tel></information:tel> +17819645371 </p>
+                <p>Email: <information:email></information:email> patel.vidhis@northeastern.edu</p>
+                <p>Disclaimer: website is created for educational purposes only.</p>
+                <a href="https://www.facebook.com/Pokemon/">
+                    <img src="facebook.png" alt="Facebook" height="25" width="25">
+                </a>
+                <a href="https://www.instagram.com/pokemon/?hl=en">
+                    <img src="instagram.avif" alt="Instagram" height="25" width="25">
+                </a>
+                <a href="https://twitter.com/pokemon?lang=en">
+                    <img src="x.jpg" alt="X" height="25" width="25">
+                </a>
+            </footer>
+</body>
+</body>
+</html>

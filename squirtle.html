@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmander</title>
+</head>
+<body>
+    <div style="display: flex;">
+    <img src="squirtle_1jpg.jpg" alt="squirtle" id="myImage">
+    <div>
+        <p style="scroll-margin-left: 200px;">Squirtle is a small Pokémon that resembles a light blue turtle. While it typically walks on its two short legs, it has been shown to run on all fours in Super Smash Bros. Brawl. It has large brown eyes and a slightly hooked upper lip. Each of its hands and feet have three pointed digits. The end of its long tail curls inward. Its body is encased by a tough shell that forms and hardens after birth. This shell is brown on the top, pale yellow on the bottom, and has a thick white ridge between the two halves.</p>
+        <img src="squirtle_evolution.jpg" alt="squirtle" width="500" height="500">
+        <p style="scroll-margin-left: 200px;">Squirtle-->Wartortle-->Blastoise</p>
+        <p style="scroll-margin-left: 200px;">Squirtle was one of the first Pokémon designed by Ken Sugimori. Squirtle's name is a portmanteau of the words squirt and turtle. It was originally going to be named "Karigon" (カメゴン), a portmanteau of kame (カメ), the Japanese word for "turtle", and "dragon" (ドラゴン doragon), as it was originally conceived as a turtle-like creature with a dragon's head, and was called this in early development.</p>
+    </div>
+    </div>
+        <audio id="myAudio">
+            <source src="Squirtle_audio.mp3" type="audio/mpeg">
+            your browser does not support the audio element.
+        </audio>
+        <script>
+            document.getElementById("myImage").addEventListener("click", function(){
+                var audio = document.getElementById("myAudio");
+                audio.play();
+            });
+            </script>
+    
+</body>
+</html>

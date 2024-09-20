@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pikachu</title>
+</head>
+<body>
+    <div style="display: flex;">
+    <img src="psyduck.jpeg" alt="chikorita" id="myImage">
+    <div>
+        <p style="scroll-margin-right: 200px;;font-size: x-large;">The Selected Pokemon Will Be Updated Soon.</p>
+        <p style="scroll-margin-right: 500px;;font-size: x-large;">Thank You!!!</p>
+    
+</div>
+    <audio id="myAudio">
+        <source src="psyduck-tailwhip.mp3" type="audio/mpeg">
+        your browser does not support the audio element.
+    </audio>
+    <script>
+        document.getElementById("myImage").addEventListener("click", function(){
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        });
+        </script>
+
+</body>
+</html>
